@@ -1,0 +1,18 @@
+# Dependencias para Robot Entregador de Galletas con Programación Genética
+# Proyecto: Comportamiento Evolutivo de Robots
+
+# Computación científica
+numpy>=1.21.0
+
+# Visualización
+matplotlib>=3.5.0
+
+# Utilidades Python estándar (incluidas)
+# random (built-in)
+# typing (built-in)
+
+# Instalación:
+# pip install numpy matplotlib
+
+# Verificación:
+# python -c "import numpy, matplotlib; print('Dependencias instaladas correctamente')"

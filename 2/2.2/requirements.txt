@@ -1,0 +1,52 @@
+# Requisitos del Proyecto
+
+## Dependencias de Python
+
+```
+numpy>=1.21.0
+matplotlib>=3.5.0
+```
+
+## Instalación
+
+### Opción 1: pip install individual
+```bash
+pip install numpy
+pip install matplotlib
+```
+
+### Opción 2: pip install desde archivo
+```bash
+pip install -r requirements.txt
+```
+
+### Opción 3: Usando conda
+```bash
+conda install numpy matplotlib
+```
+
+## Verificación de instalación
+
+Ejecuta este código para verificar que todo esté instalado:
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+print("✅ NumPy versión:", np.__version__)
+print("✅ Matplotlib versión:", plt.matplotlib.__version__)
+print("🎉 ¡Todo listo para la simulación!")
+```
+
+## Especificaciones del sistema
+
+- **Python**: 3.7 o superior
+- **Memoria**: Mínimo 512 MB RAM
+- **Espacio**: ~50 MB para las librerías
+- **Sistema**: Windows, macOS, Linux
+
+## Notas
+
+- Si usas Anaconda/Miniconda, NumPy y Matplotlib ya vienen preinstalados
+- En algunos sistemas puede ser necesario usar `python3` en lugar de `python`
+- Si tienes problemas con matplotlib en WSL, instala: `sudo apt-get install python3-tk`
