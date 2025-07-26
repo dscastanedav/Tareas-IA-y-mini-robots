@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Diseño de Circuito Codificador de 7 Segmentos usando Programación Genética

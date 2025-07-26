@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Despacho Óptimo de Energía Eléctrica usando Algoritmos Genéticos

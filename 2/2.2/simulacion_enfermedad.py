@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Simulación de Propagación de Enfermedad usando Autómatas Celulares Probabilísticos
