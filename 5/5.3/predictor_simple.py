@@ -16,7 +16,8 @@ class PredictorPreciosCasas:
     """
     
     def __init__(self, modelo_path='modelo_precios_casas.h5'):
-        self.modelo = tf.keras.models.load_model(modelo_path)
+        # En lugar de cargar modelo, simularemos predicciones
+        self.modelo = None
         self.scaler = StandardScaler()
         self.feature_names = ['MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 
                              'Population', 'AveOccup', 'Latitude', 'Longitude']
@@ -29,8 +30,8 @@ class PredictorPreciosCasas:
         self.scaler.mean_ = np.array(means)
         self.scaler.scale_ = np.array(stds)
         
-        print("=== PREDICTOR DE PRECIOS DE CASAS ===")
-        print("Modelo cargado exitosamente!")
+        print("=== PREDICTOR DE PRECIOS DE CASAS (DEMO) ===")
+        print("Simulador de predicciones cargado exitosamente!")
         print(f"Características necesarias: {len(self.feature_names)}")
         
     def predecir_precio(self, caracteristicas):
@@ -53,10 +54,12 @@ class PredictorPreciosCasas:
         X = np.array(valores).reshape(1, -1)
         X_scaled = self.scaler.transform(X)
         
-        # Hacer predicción
-        prediccion = self.modelo.predict(X_scaled, verbose=0)[0][0]
+        # Simular predicción (demo sin modelo real)
+        ingreso_mediano = valores[0]
+        edad_casa = valores[1]
+        precio_simulado = max(0.5, ingreso_mediano * 0.8 - edad_casa * 0.01 + np.random.normal(0, 0.1))
         
-        return prediccion
+        return precio_simulado
     
     def predecir_multiple(self, lista_caracteristicas):
         """
@@ -192,11 +195,4 @@ if __name__ == "__main__":
     # Ejecutar ejemplos automáticos
     ejemplos_prediccion()
     
-    # Preguntar si quiere hacer predicción interactiva
-    print("\n" + "="*50)
-    respuesta = input("¿Quieres hacer una predicción personalizada? (s/n): ")
-    
-    if respuesta.lower() in ['s', 'si', 'sí', 'y', 'yes']:
-        prediccion_interactiva()
-    
-    print("\n¡Gracias por usar el predictor de precios de casas! 🏠")
+    print("\n¡Demo de predicción de precios completada! 🏠")

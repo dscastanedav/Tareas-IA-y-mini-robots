@@ -129,7 +129,7 @@ def crear_graficos(X_test, y_test, y_pred_lineal, y_pred_neuronal):
     plt.grid(True, alpha=0.3)
     
     plt.tight_layout()
-    plt.savefig('c:/Users/santi/OneDrive/Documentos/Tareas IA y mini robots/6.1/comparacion_modelos.png', dpi=300, bbox_inches='tight')
+    plt.savefig('comparacion_modelos.png', dpi=300, bbox_inches='tight')
     plt.show()
 
 def main():

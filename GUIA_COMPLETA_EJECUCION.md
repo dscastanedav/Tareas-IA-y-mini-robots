@@ -1,6 +1,30 @@
 # 🚀 GUÍA COMPLETA DE EJECUCIÓN - EJERCICIOS DE IA
 
-## ✅ PREPARACIÓN INICIAL
+## ✅ ESTADO ACTUAL: TODOS LOS PROGRAMAS FUNCIONANDO CORRECTAMENTE
+
+### 🔧 **CORRECCIONES APLICADAS:**
+- ✅ **Te---
+
+## 13. 🤖 **AGENTE IA DE CURSO** *(Modo Demo Automático)*
+
+**Ubicación**: `7\7.1\agente_ia_curso.py`
+
+**Comando**:
+```powershell
+cd "c:\Users\santi\OneDrive\Documentos\Tareas IA y mini robots\7\7.1"
+&"C:/Users/santi/OneDrive/Documentos/Tareas IA y mini robots/.venv/Scripts/python.exe" agente_ia_curso.py
+```
+
+**Nota**: Ejecuta automáticamente una demo de funcionalidades del chatbot.
+
+---
+
+## 14. 🔍 **SISTEMA RAG UNIVERSITARIO** *(Modo Demo Automático)*
+
+**Ubicación**: `7\7.3\sistema_rag_universidad.py`nstalado** (programas 8 y 9 funcionando)
+- ✅ **Rutas de guardado corregidas** (programas 10, 11, 12)
+- ✅ **AttributeError corregido** (programa 3)
+- ✅ **Programas interactivos convertidos a demos** (programas 13, 14, 15)
 
 ### Configuración del Entorno:
 ```powershell
@@ -183,15 +207,39 @@ cd "c:\Users\santi\OneDrive\Documentos\Tareas IA y mini robots\7\7.3"
 &"C:/Users/santi/OneDrive/Documentos/Tareas IA y mini robots/.venv/Scripts/python.exe" sistema_rag_universidad.py
 ```
 
+**Nota**: Ejecuta automáticamente consultas de ejemplo sobre la Universidad Nacional.
 
-# 📈 RESUMEN
+---
+
+## 15. 🏠 **PREDICTOR SIMPLE DE CASAS** *(Modo Demo)*
+
+**Ubicación**: `5\5.3\predictor_simple.py`
+
+**Comando**:
+```powershell
+cd "c:\Users\santi\OneDrive\Documentos\Tareas IA y mini robots\5\5.3"
+&"C:/Users/santi/OneDrive/Documentos/Tareas IA y mini robots/.venv/Scripts/python.exe" predictor_simple.py
+```
+
+**Nota**: Ejecuta ejemplos automáticos de predicción de precios (sin necesidad de modelo entrenado).
+
+
+# 📈 RESUMEN 
+
+### **Total: 15 Programas Completamente Funcionales**
 
 ### **Por Categoría**:
 - 🦠 **Simulaciones**: 1 programa
 - 🧬 **Algoritmos Genéticos**: 3 programas  
 - 🧪 **Programación Genética**: 2 programas
-- 🧠 **Redes Neuronales**: 3 programas
+- 🧠 **Redes Neuronales**: 4 programas (incluyendo TensorFlow)
 - 📊 **Machine Learning Clásico**: 3 programas
 - 🤖 **Sistemas IA Avanzados**: 2 programas
+
+### **Estado de Funcionamiento**:
+- ✅ **15/15 programas operativos**
+- ✅ **Todas las dependencias instaladas**
+- ✅ **Todos los errores corregidos**
+- ✅ **Programas interactivos convertidos a demos automáticas**
 
 

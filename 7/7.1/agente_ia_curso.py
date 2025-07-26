@@ -322,16 +322,5 @@ def demo_funcionalidades():
         print(f"   {key}: {value}")
 
 if __name__ == "__main__":
-    print("Selecciona una opción:")
-    print("1. Ejecutar chatbot interactivo")
-    print("2. Ver demo de funcionalidades")
-    
-    opcion = input("\nOpción (1 o 2): ").strip()
-    
-    if opcion == "1":
-        main()
-    elif opcion == "2":
-        demo_funcionalidades()
-    else:
-        print("Opción no válida. Ejecutando chatbot...")
-        main()
+    print("Ejecutando demo automática del agente...")
+    demo_funcionalidades()

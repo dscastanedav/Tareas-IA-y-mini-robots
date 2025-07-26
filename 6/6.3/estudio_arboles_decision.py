@@ -341,7 +341,7 @@ class EstudioArbolesDecision:
         axes[1, 1].axis('off')
         
         plt.tight_layout()
-        plt.savefig('c:/Users/santi/OneDrive/Documentos/Tareas IA y mini robots/6.3/estudio_arboles.png', 
+        plt.savefig('estudio_arboles.png', 
                    dpi=300, bbox_inches='tight')
         plt.show()
         

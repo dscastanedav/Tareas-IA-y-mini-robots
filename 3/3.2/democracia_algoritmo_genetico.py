@@ -165,7 +165,7 @@ class SistemaDemocraticoAG:
         
         for partido in self.partidos:
             barra = "█" * int(partido.curules / 2)  # Escala visual
-            print(f"{partido.nombre:<20} {partido.curules:2d} curules ({partido.porcentaje:5.1f}%) {barra}")
+            print(f"{partido.nombre:<20} {partido.curules:2d} curules ({partido.porcentaje_representacion:5.1f}%) {barra}")
         
         print()
     
@@ -225,7 +225,7 @@ class SistemaDemocraticoAG:
         proporcion_poder = poder_por_partido / poder_total
         
         # Proporción ideal basada en representación parlamentaria
-        proporcion_ideal = np.array([p.porcentaje / 100 for p in self.partidos])
+        proporcion_ideal = np.array([p.porcentaje_representacion / 100 for p in self.partidos])
         
         # Calcular diferencia entre proporción real e ideal
         diferencia = np.abs(proporcion_poder - proporcion_ideal)

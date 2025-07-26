@@ -264,7 +264,7 @@ class EstudioSVM:
         axes[1, 1].axis('off')
         
         plt.tight_layout()
-        plt.savefig('c:/Users/santi/OneDrive/Documentos/Tareas IA y mini robots/6.2/estudio_svm.png', 
+        plt.savefig('estudio_svm.png', 
                    dpi=300, bbox_inches='tight')
         plt.show()
         

@@ -380,6 +380,33 @@ def demo_sistema():
         print(f"🤖 Respuesta:\n{respuesta}")
         print("=" * 50)
 
+def demo_sistema():
+    """Ejecuta una demostración del sistema RAG"""
+    print("\n🔬 DEMOSTRACIÓN DEL SISTEMA RAG")
+    print("=" * 50)
+    
+    sistema = SistemaRAGUniversidad()
+    
+    # Consultas de ejemplo
+    consultas_demo = [
+        "¿Qué carreras de ingeniería ofrece la Universidad Nacional?",
+        "¿Dónde está ubicada la Universidad Nacional?",
+        "¿Cuándo fue fundada la universidad?",
+        "¿Qué programas de posgrado hay en medicina?",
+        "¿Cómo funciona la admisión?",
+        "¿Qué sedes tiene la universidad?",
+        "¿Quién es el rector actual?",
+        "¿Cuántos estudiantes tiene la universidad?"
+    ]
+    
+    for consulta in consultas_demo:
+        print(f"\n💬 Consulta: {consulta}")
+        respuesta = sistema.procesar_consulta(consulta)
+        print(f"🤖 Respuesta:\n{respuesta}")
+        print("-" * 50)
+    
+    print("\n✅ Demo completada!")
+
 def main():
     """Función principal para interactuar con el sistema RAG"""
     print("🤖 CHATUN - SISTEMA RAG UNIVERSIDAD NACIONAL")
@@ -423,4 +450,5 @@ def main():
             print(f"\n🤖 Error: {e}")
 
 if __name__ == "__main__":
-    main()
+    print("Ejecutando demo automática del Sistema RAG...")
+    demo_sistema()
