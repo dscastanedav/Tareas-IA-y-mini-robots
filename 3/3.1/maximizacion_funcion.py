@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Maximización de la función f(x) = x * sin(10πx) + 1
