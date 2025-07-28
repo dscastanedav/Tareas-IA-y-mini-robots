@@ -2,6 +2,47 @@
 
 ## ✅ ESTADO ACTUAL: TODOS LOS PROGRAMAS FUNCIONANDO CORRECTAMENTE
 
+## 📦 INSTALACIÓN DE DEPENDENCIAS
+
+### **ANTES DE EJECUTAR LOS PROGRAMAS, INSTALAR:**
+
+#### 1. **Crear y Activar Entorno Virtual:**
+```powershell
+cd "c:\Users\santi\OneDrive\Documentos\Tareas IA y mini robots"
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+#### 2. **Instalar Dependencias Principales:**
+```powershell
+# Dependencias básicas de ciencia de datos
+pip install numpy pandas matplotlib seaborn scipy scikit-learn
+
+# TensorFlow para Deep Learning (programas 8 y 9)
+pip install tensorflow
+
+# Dependencias adicionales para visualización y análisis
+pip install jupyter ipykernel plotly
+
+# Dependencias para programación genética
+pip install deap
+
+# Herramientas de utilidad
+pip install tqdm requests beautifulsoup4
+```
+
+#### 3. **Verificar Instalación:**
+```powershell
+python -c "import tensorflow as tf; print('TensorFlow:', tf.__version__)"
+python -c "import numpy as np; print('NumPy:', np.__version__)"
+python -c "import sklearn; print('Scikit-learn:', sklearn.__version__)"
+```
+
+#### 4. **Comando Completo de Instalación (Todo en uno):**
+```powershell
+pip install numpy pandas matplotlib seaborn scipy scikit-learn tensorflow jupyter ipykernel plotly deap tqdm requests beautifulsoup4
+```
+
 ### 🔧 **CORRECCIONES APLICADAS:**
 - ✅ **Te---
 
@@ -241,5 +282,38 @@ cd "c:\Users\santi\OneDrive\Documentos\Tareas IA y mini robots\5\5.3"
 - ✅ **Todas las dependencias instaladas**
 - ✅ **Todos los errores corregidos**
 - ✅ **Programas interactivos convertidos a demos automáticas**
+
+---
+
+## 🛠️ TROUBLESHOOTING COMÚN
+
+### **Si aparece error de módulo no encontrado:**
+```powershell
+pip install [nombre_del_modulo]
+```
+
+### **Si TensorFlow no funciona:**
+```powershell
+pip uninstall tensorflow
+pip install tensorflow
+```
+
+### **Si hay problemas con matplotlib en Windows:**
+```powershell
+pip install --upgrade matplotlib
+```
+
+### **Verificar que el entorno virtual esté activo:**
+```powershell
+# Debe aparecer (.venv) al inicio del prompt
+where python
+# Debe mostrar la ruta del entorno virtual
+```
+
+### **Lista completa de dependencias por programa:**
+- **Programas 1-7**: `numpy`, `matplotlib`, `seaborn`, `scipy`, `scikit-learn`
+- **Programas 8-9**: `tensorflow`, `numpy`, `matplotlib`
+- **Programas 10-12**: `scikit-learn`, `matplotlib`, `numpy`
+- **Programa 13-15**: `numpy`, `pandas` (para demos)
 
 
